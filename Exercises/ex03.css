@@ -1,0 +1,18 @@
+.test-div{
+background: rgb(220, 151, 210);
+padding: 20x; 
+Margin: 20px;
+
+}
+
+.test-div h2 {
+color: darkslategrey;
+text-decoration: line-through
+}
+
+.test-div:hover {background-color: rgba(220, 159, 228, 0.379);}
+button.special:hover { padding: 100x; ;
+    background-color: rgb(135, 6, 75);}
+    .test-div .special {background-color: blueviolet;}
+
+#house {display: flex;}
