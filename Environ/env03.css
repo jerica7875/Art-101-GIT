@@ -1,0 +1,34 @@
+#campaign {width: 500px;}
+  BODY { background: #6072fa; padding: 50px;}
+  H1, H2, H3 {color: #ffffff; font-family: sans-serif;}
+
+  #camp { background: rgb(54, 199, 98);}
+
+#eagle {width: 300px; position: absolute; right: 4px;}
+#eagle2 {width: 300px; position: absolute; right: 0%;}
+
+#button2 { width: 300px; height: 300px;}
+
+.house {
+    column-count: 3;
+}
+
+.test-div{
+background: rgb(91, 61, 240);
+padding: 20x; 
+Margin: 20px;
+
+}
+
+.test-div h2 {
+color: rgba(239, 248, 190, 0.646);
+text-decoration:underline 
+}
+
+.test-div:hover {background-color: rgba(220, 159, 228, 0.379);}
+button.special:hover {  padding: 300x; ;
+    background-color: rgb(149, 56, 112);}
+    .test-div .special {background-color: blueviolet;}
+
+#house {display: flex; gap: 20px;
+}
