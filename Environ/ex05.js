@@ -1,10 +1,4 @@
-function makeImage (imageName) {
 
- if (colors[colorCount] == imageName) {
-       $("body").append("<img width=50 src='images/" + imageName + ".png'>");
-   }
-
-}
 
 // the button part
 $("#needy-button").click(function () {
@@ -20,13 +14,4 @@ changeBackground ( colors [colorCount]);
       count = count + 1;
    colorCount = colorCount + 1;
    if (colorCount == 4) { colorCount = 0; }
-});
-
-function changeBackground (newColor) {
-
-   $("body").css("background-color", newColor);
-
-}
-$(".color-button").click(function () {
-    changeBackgroeund(this.id);
 });
