@@ -1,27 +1,30 @@
-// when the button is clicked (event)
+$("#add-creature").click(
+    function () {
 
-$(" #creature-form").click(
-function (){
-// our action when the button is clicked
+        // grab the value from the input
+        let crName = $("#crName").val();
+        let crColor= $("#crColor").val();
+        let crEyesNum= $("#crEyesNum").val();
+        let crEyesHTML="";
 
-let crName = $("#crName").val();
-
-if (crName=="" || (crName.lenth >12)) {
-//do nothin
-
-}
-else {
-
-    $("#creature-list").append(crName + ", ");
-
-}
-
-// have a variable for storing names 
+        for (let i = 0; i < crEyesNum ; i++){
+            crEyesHTML=crEyesHTML + "<div class=eye>.</div>";
+        }
 
 
-}
+        // check for the field value do not add empty ones
+        if ( (crName == "") || (crName.length>12) ) { // do nothing 
+        }
+        else {
+            $("#creature-list").append(
+`<div class="creature">
+    <div class="creature-body" style="background: ${crColor}">${crEyesHTML}</div>
+    <div class="creature-info">${crName}</div>
+</div>`
+);
+        }
 
+        // remove the name after it's added
+        $("#crName").val("");
 
-
-)
-// text moves from the box to the creature list
+    });
